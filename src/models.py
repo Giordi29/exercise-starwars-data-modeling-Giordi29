@@ -54,7 +54,6 @@ class Planets(Base):
     # Here we define columns for the table address.
     # Notice that each column is also a normal Python instance attribute.
     id = Column(Integer, primary_key=True)
-    user_id = Column(Integer, ForeignKey("User.id"), nullable=False)
     character_id = Column(Integer, ForeignKey("Characters.id"), nullable=False)
 
 class Fave_plts(Base):
